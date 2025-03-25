@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# 📖 Atomic Blog
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Atomic Blog is a React-based blogging platform that allows users to browse, search, add, archive, and unarchive blog posts. It leverages **React Hooks** and **API calls** to fetch blog data and stores user information persistently using **local storage**.
 
-## Available Scripts
+## 🚀 Features
 
-In the project directory, you can run:
+- 🔍 **Search Blogs** – Find blogs from the available list.
+- 📝 **Add Custom Blogs** – Users can create and display custom blog cards.
+- 📂 **Archive/Unarchive Blogs** – Organize blogs by archiving and unarchiving them.
+- 🔄 **Persistent State** – Uses **local storage** to save user data and resume from the last state.
+- 🌐 **Fetch Blogs from API** – Dynamically loads blog data.
 
-### `npm start`
+## 🛠 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** React.js, React Hooks (useState, useEffect)
+- **Data Management:** Local Storage, API Calls (Fetch/Axios)
+- **Styling:** CSS/Tailwind (Optional)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📦 Installation
 
-### `npm test`
+Clone the repository and install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```sh
+git clone https://github.com/yourusername/Atomic-Blog.git
+cd Atomic-Blog
+npm install  # or yarn install
+```
 
-### `npm run build`
+## ▶️ Running the Application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+npm start  # or yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app will be live at **http://localhost:5173/** (default Vite port).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🏗 Build for Production
 
-### `npm run eject`
+```sh
+npm run build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This will generate a `dist/` folder with optimized files.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📂 Project Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+Atomic-Blog/
+│── src/
+│   ├── App-memo.js        # Memoized version of the app
+│   ├── App-v1.js          # Previous version of the app
+│   ├── App.js             # Main application component
+│   ├── PostContext.js     # Context for managing posts
+│   ├── Test.js            # Test component
+│   ├── index.js           # Entry point
+│   ├── style.css          # Global styles
+│── public/                # Static assets
+│── package.json           # Dependencies and scripts
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
 
-## Learn More
+## 🔥 Future Enhancements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- ✨ User authentication & profile management
+- 🗃️ Backend integration for persistent data storage
+- 🌙 Dark mode support
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🤝 Contributing
 
-### Code Splitting
+Feel free to fork, raise issues, or create pull requests!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
